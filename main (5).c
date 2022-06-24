@@ -1,16 +1,16 @@
-#include<stdio.h>         //This is the header file for using scanf and printf functions in the program
+ #include<stdio.h>                                   //This is the header file for using scanf and printf functions in the program
 int main()
 {
-    int i,j,r,c,n,sum=0;  //Declaring integers, 'i and j' for For Loop, 'r' is No. of Rows, 'c' is No. of Columns, sum is for addition of columns
-    int a[10][10];        //It is the matrix array with maximum limit
+    int i,j,r,c,n,sum=0;                             //Declaring integers, 'i and j' for For Loop, 'r' is No. of Rows, 'c' is No. of Columns, sum is for addition of columns
+    int a[10][10];                                   //It is the matrix array with maximum limit
     printf("Enter the number of rows and columns:"); //print function to intimate user to give the No. of Rows and No. of Columns as input
-    scanf("%d %d",&r,&c); //Gets No. of Rows and No. of Columns as an input
+    scanf("%d %d",&r,&c);                            //Gets No. of Rows and No. of Columns as an input
     printf("Enter the matrix elements:\n");          //print function to intimate user to give the Matrix Elements as input
-    for(i=0;i<r;i++)      //For loop with Initialization from zero, Condition and Post Increment. 'i' gets incremented when inner loop gets completed
+    for(i=0;i<r;i++)                                 //For loop with Initialization from zero, Condition and Post Increment. 'i' gets incremented when inner loop gets completed
     {
-    for(j=0;j<c;j++)      //Nested For Loop with Initialization from zero, Condition and Post Increment. 'j' gets incremented when its block of statement gets executed
+    for(j=0;j<c;j++)                                 //Nested For Loop with Initialization from zero, Condition and Post Increment. 'j' gets incremented when its block of statement gets executed
     {
-    scanf("%d",&a[i][j]); //Gets Matrix elements in the form of an array as an input
+    scanf("%d",&a[i][j]);                            //Gets Matrix elements in the form of an array as an input
     }
     }
     printf("Enter column number to be added: ");     //print function to intimate user to give the column number to be added
